@@ -11,7 +11,8 @@ from chamfer_distance.chamfer_distance import ChamferDistance
 
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--root', type=str, default='/home/rico/Workspace/Dataset/shapenet_part/shapenetcore_partanno_segmentation_benchmark_v0')
+# parser.add_argument('--root', type=str, default='/home/rico/Workspace/Dataset/shapenet_part/shapenetcore_partanno_segmentation_benchmark_v0')
+parser.add_argument('--root', type=str, default='/home/anji/FoldingNet/data/shapenetcore_partanno_segmentation_benchmark_v0')
 parser.add_argument('--npoints', type=int, default=2048)
 parser.add_argument('--mpoints', type=int, default=2025)
 parser.add_argument('--batch_size', type=int, default=16)
@@ -19,7 +20,7 @@ parser.add_argument('--lr', type=float, default=1e-4)
 parser.add_argument('--weight_decay', type=float, default=1e-6)
 parser.add_argument('--epochs', type=int, default=400)
 parser.add_argument('--num_workers', type=int, default=4)
-parser.add_argument('--log_dir', type=str, default='./log')
+parser.add_argument('--log_dir', type=str, default='./log2')
 args = parser.parse_args()
 
 
